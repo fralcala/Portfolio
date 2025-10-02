@@ -1,0 +1,28 @@
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 2px solid white;
+  //   Change font size for screen sizes later
+  font-size: 35px;
+
+  nav {
+    .navLinks {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+
+      li {
+        a {
+          text-decoration: none;
+          color: $text-color;
+
+          &:hover {
+            color: $neon-pink;
+            // add mixins for glow effect maybe
+          }
+        }
+      }
+    }
+  }
+}
