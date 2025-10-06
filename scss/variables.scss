@@ -1,6 +1,8 @@
 // Color Variables
-$background-color: #0e0c4e;
+$background-color-dark: #0e0c4e;
+$background-color-light: #433df0;
 
+// neon colors
 $neon-pink: #f24ba7;
 
 $neon-purple: #ba38f2;
@@ -9,9 +11,30 @@ $neon-green: #14d9b5;
 
 $neon-yellow: #f2dc6b;
 
+// ON colors
+$pink-on: #ba327d;
+
+$purple-on: #9730c3;
+
+$green-on: #3fa995;
+
+$yellow-on: #bfa62a;
+
+// OFF colors
+$pink-off: #873261;
+
+$purple-off: #7a3697;
+
+$green-off: #328d7c;
+
+$yellow-off: #887b38;
+
+// text color
 $text-color: #ffffff;
 
 $alt-text-color: #000000;
+
+$border-radius: 18px;
 
 // Add Fonts
 // M PLUS Rounded 1c

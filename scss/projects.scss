@@ -1,0 +1,74 @@
+.projectsContainer {
+  #project {
+    width: 1062px;
+    height: 341px;
+    border-radius: $border-radius;
+    padding: 22px;
+    margin-bottom: 55px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .projectImage {
+      width: 440px;
+      height: 297px;
+      background-color: black;
+      border-radius: $border-radius;
+      margin-right: 20px;
+    }
+
+    .content {
+      width: 550px;
+      height: 297px;
+      //   display: flex;
+      //   flex-direction: column;
+      //   background-color: blue;
+      border-radius: $border-radius;
+    }
+  }
+
+  // Color var one
+  .projVarOne {
+    background-color: $pink-off;
+
+    &:hover {
+      background-color: $pink-on;
+      box-shadow: 0px 0px 15.5px 15px $neon-pink;
+      border: 5px solid #ffacda;
+    }
+  }
+
+  // color var two
+  .projVarTwo {
+    background-color: $purple-off;
+
+    &:hover {
+      background-color: $purple-on;
+      box-shadow: 0px 0px 15.5px 15px $neon-purple;
+      border: 3px solid #dda7f4;
+    }
+  }
+
+  // color var three
+  .projVarThree {
+    background-color: $green-off;
+
+    &:hover {
+      background-color: $green-on;
+      box-shadow: 0px 0px 15.5px 15px $neon-green;
+      border: 3px solid #b2f2e2;
+    }
+  }
+
+  // color var four
+  .projVarFour {
+    background-color: $yellow-off;
+  }
+
+  .projVarFour:hover {
+    background-color: $yellow-on;
+    box-shadow: 0px 0px 15.5px 15px $neon-yellow;
+    border: 3px solid #fef2b6;
+  }
+}
