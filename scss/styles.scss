@@ -1,4 +1,5 @@
-@import "variables.scss";
-@import "structure.scss";
-@import "topBarNav.scss";
-@import "projects.scss";
+@use "variables.scss";
+@use "mixins.scss";
+@use "structure.scss";
+@use "topBarNav.scss";
+@use "projects.scss";

@@ -1,0 +1,16 @@
+@use "variables" as *;
+
+@keyframes glow-pulse {
+  from {
+    text-shadow: 0 0 5px $neon-pink; /* Initial subtle glow */
+  }
+  to {
+    text-shadow: 0 0 20px $neon-pink, 0 0 30px $neon-pink, 0 0 40px $neon-pink; /* More intense glow */
+  }
+}
+
+@mixin glowing-text {
+  color: #ffacda;
+  font-weight: bold;
+  animation: glow-pulse 2s infinite alternate;
+}
