@@ -1,26 +1,41 @@
 @use "variables" as *;
 
 .projectsContainer {
+  max-width: 1067px;
+  width: 100%;
   font-family: "Comfortaa";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-size: 18px;
 
   h1 {
-    color: $text-color;
+    color: $cyan;
+    text-shadow: 0 0 10px $cyan-glow;
+    margin-bottom: 40px;
+    align-self: flex-start;
   }
 
   #project {
-    color: $alt-text-color;
-    width: 1067px;
+    max-width: 1067px;
+    width: 100%;
     height: 346px;
-    border-radius: $border-radius;
-    padding: 22px;
-    margin-bottom: 55px;
-
-    line-height: 25px;
-
     display: flex;
     justify-content: center;
     align-items: center;
+
+    margin-bottom: 55px;
+    padding: 22px;
+    border-radius: $border-radius;
+    background-color: $orange-off;
+    color: $alt-text-color;
+    line-height: 25px;
+
+    &:hover {
+      background-color: $orange-on;
+      // box-shadow: 0px 0px 15.5px 15px $neon-pink;
+      // border: 5px solid $pink-light;
+    }
 
     .projectImage {
       width: 440px;
@@ -43,72 +58,47 @@
       display: flex;
       flex-direction: column;
 
+      h2,
+      .projectDescription {
+        transition: color 0.3s ease;
+      }
+
       .skillLabels {
         display: flex;
-        gap: 10px;
-        // margin-top: 20px;
+        gap: 5px;
+        margin-top: 20px;
+        color: $dark-text-color;
 
         .skill {
           display: flex;
           justify-content: center;
           font-size: 15px;
           height: 25px;
-          // align-items: center;
-          // width: 100px;
+          align-items: center;
           padding: 5px;
-          background-color: rgb(0, 0, 0);
+          background-color: $alt-text-color;
+          transition: background-color 0.3s ease;
           border-radius: 50px;
-          // color: rgb(94, 94, 94);
         }
       }
     }
 
     &:hover {
-      color: $text-color;
+      .skill {
+        background-color: $white-button !important;
+      }
+
+      .projectDescription,
+      h2 {
+        color: $text-color;
+        transition: color 0.3s ease;
+      }
     }
   }
+}
 
-  // Color var one
-  .projVarOne {
-    background-color: $pink-off;
-
-    &:hover {
-      background-color: $pink-on;
-      box-shadow: 0px 0px 15.5px 15px $neon-pink;
-      border: 5px solid $pink-light;
-    }
-  }
-
-  // color var two
-  .projVarTwo {
-    background-color: $purple-off;
-
-    &:hover {
-      background-color: $purple-on;
-      box-shadow: 0px 0px 15.5px 15px $neon-purple;
-      border: 5px solid $purple-light;
-    }
-  }
-
-  // color var three
-  .projVarThree {
-    background-color: $green-off;
-
-    &:hover {
-      background-color: $green-on;
-      box-shadow: 0px 0px 15.5px 15px $neon-green;
-      border: 5px solid #b2f2e2;
-    }
-  }
-
-  // color var four
-  .projVarFour {
-    background-color: $yellow-off;
-  }
-
-  .projVarFour:hover {
-    background-color: $yellow-on;
-    box-shadow: 0px 0px 15.5px 15px $neon-yellow;
-    border: 5px solid #fef2b6;
+@media screen and (max-width: 765px) {
+  .project {
+    width: 95%;
   }
 }
