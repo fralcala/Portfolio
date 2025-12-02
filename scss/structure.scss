@@ -59,3 +59,10 @@ body {
     }
   }
 }
+
+hr {
+  border: none;
+  width: 441px;
+  border-top: 2px solid $secondary-glow;
+  margin-bottom: 51px;
+}
