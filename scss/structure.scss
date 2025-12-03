@@ -61,6 +61,7 @@ body {
   }
 }
 
+// H1 Glow Style ** Give h1 elements the glow effect and color by adding this class
 .hGlow {
   color: $secondary;
   text-shadow: 0 0 10px $secondary-glow;
@@ -72,6 +73,8 @@ body {
 hr {
   border: none;
   width: 441px;
+  box-shadow: 0 0 10px $secondary-glow;
   border-top: 2px solid $secondary-glow;
+  border-radius: 2px;
   margin-bottom: 51px;
 }

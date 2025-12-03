@@ -3,7 +3,7 @@
 #projectsContainer {
   max-width: 1067px;
   width: 100%;
-  font-family: "Comfortaa";
+  // font-family: "Comfortaa";
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,10 +29,10 @@
     }
 
     .projectImage {
-      width: 440px;
-      height: 297px;
-      // background-color: black;
-      border-radius: $border-radius;
+      width: 445px;
+      // height: 297px;
+      border-radius: 18px;
+      overflow: hidden;
 
       img {
         width: 100%;
@@ -40,7 +40,6 @@
         object-fit: contain;
         object-position: center;
         filter: brightness(70%);
-        // border-radius: $border-radius;
       }
     }
 

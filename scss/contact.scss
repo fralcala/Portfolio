@@ -1,0 +1,47 @@
+@use "variables" as *;
+#contactContainer {
+  max-width: 1067px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+
+  h1 {
+    color: $secondary;
+    text-shadow: 0 0 10px $secondary-glow;
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+
+  .contactContent {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      margin-bottom: 15px;
+      font-size: 20px;
+      color: $text-color;
+    }
+
+    .contactBar {
+      width: 100%;
+      ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        li {
+          a {
+            text-decoration: none;
+            color: $text-color;
+            font-family: "M Rounded";
+            font-size: 50px;
+          }
+        }
+      }
+    }
+  }
+}

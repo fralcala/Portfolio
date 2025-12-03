@@ -63,7 +63,9 @@ body {
 hr {
   border: none;
   width: 441px;
+  box-shadow: 0 0 10px #68a7fe;
   border-top: 2px solid #68a7fe;
+  border-radius: 2px;
   margin-bottom: 51px;
 }
 
@@ -101,7 +103,6 @@ hr {
 #projectsContainer {
   max-width: 1067px;
   width: 100%;
-  font-family: "Comfortaa";
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -125,9 +126,9 @@ hr {
   margin-bottom: 15px;
 }
 #projectsContainer .project .projectImage {
-  width: 440px;
-  height: 297px;
+  width: 445px;
   border-radius: 18px;
+  overflow: hidden;
 }
 #projectsContainer .project .projectImage img {
   width: 100%;
@@ -195,7 +196,6 @@ hr {
 #aboutContainer {
   max-width: 1067px;
   width: 100%;
-  font-family: "Comfortaa";
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -234,4 +234,45 @@ hr {
   background-image: url(../assets/images/pic.jpg);
   background-size: cover;
   background-position: center;
+}
+
+#contactContainer {
+  max-width: 1067px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+}
+#contactContainer h1 {
+  color: #279beb;
+  text-shadow: 0 0 10px #68a7fe;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+#contactContainer .contactContent {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contactContainer .contactContent p {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #ffffff;
+}
+#contactContainer .contactContent .contactBar {
+  width: 100%;
+}
+#contactContainer .contactContent .contactBar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+#contactContainer .contactContent .contactBar ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "M Rounded";
+  font-size: 50px;
 }
