@@ -13,6 +13,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: $background-color;
+  font-family: "Comfortaa";
 }
 
 @font-face {
@@ -37,7 +38,7 @@ body {
 
   .homeIntro {
     width: 100%;
-    height: 485px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,7 +49,7 @@ body {
 
       h1 {
         font-size: 50px;
-        margin-bottom: 10px;
+        margin-bottom: 35px;
       }
 
       p {
@@ -58,6 +59,14 @@ body {
       }
     }
   }
+}
+
+.hGlow {
+  color: $secondary;
+  text-shadow: 0 0 10px $secondary-glow;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  align-self: flex-start;
 }
 
 hr {
